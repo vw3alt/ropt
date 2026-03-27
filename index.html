@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<div id="mobile-gate">
+  <h1>PC Required</h1>
+  <p>
+    ropt runs a 3.8B parameter LLM entirely in-browser using WebGPU. 
+    <br><br>
+    It's too laggy on phone - please switch to a laptop or desktop.
+  </p>
+</div>
+
 <div id="status-bar">
   <span style="color:var(--accent);";>ropt</span>
   <div id="status-dot"></div>
@@ -19,7 +28,7 @@
 <div id="setup-popup" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(14,14,14,0.95); display:flex; align-items:center; justify-content:center; z-index:1000;">
   <div style="background:var(--surface); border:1px solid var(--border); padding:30px; border-radius:8px; text-align:center; max-width:400px;">
     <h2 style="color:var(--accent); margin-bottom:15px; font-size:18px;">initial setup</h2>
-    <p style="margin-bottom:20px; font-size:14px; line-height:1.6;">ropt takes 2-4 minutes for initial setup. go outside and touch grass</p>
+    <p style="margin-bottom:20px; font-size:14px; line-height:1.6;">ropt is entirely browser based, so it takes 2-4 minutes for initial setup.        go outside and touch grass</p>
     <button id="close-popup" style="background:var(--accent); border:none; padding:10px 25px; border-radius:4px; cursor:pointer; font-family:var(--font); font-weight:600;">OK</button>
   </div>
 </div>

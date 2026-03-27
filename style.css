@@ -171,3 +171,37 @@
   color: var(--accent) !important;
   opacity: 1 !important;
 }
+
+#mobile-gate {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  z-index: 9999;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--font);
+}
+
+#mobile-gate h1 {
+  color: var(--accent);
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#mobile-gate p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  #mobile-gate {
+    display: flex;
+  }
+}
