@@ -1,0 +1,12 @@
+{
+  "phrases": [
+    { "text": "chat are we cooked chat", "probability": 0.01 },
+    { "text": "incredible", "probability": 0.02 },
+    { "text": "yessir", "probability": 0.01 },
+    { "text": "yeppers", "probability": 0.01 },
+    { "text": "yeahhh alright buddy", "probability": 0.01 },
+    { "text": "makes sense", "probability": 0.01 },
+    { "text": "lmao", "probability": 0.02 },
+    { "text": "you single?", "probability": 0.02 }
+  ]
+}
