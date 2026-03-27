@@ -29,6 +29,7 @@ const progressBar  = $('progress-bar');
 const chat         = $('chat');
 const userInput    = $('user-input');
 const sendBtn      = $('send-btn');
+const refreshBtn = $('refresh-btn');
 
 function setStatus(state, text) {
   statusDot.className = state;
@@ -329,6 +330,15 @@ userInput.addEventListener('keydown', (e) => {
 userInput.addEventListener('input', () => {
   userInput.style.height = '44px';
   userInput.style.height = Math.min(userInput.scrollHeight, 120) + 'px';
+});
+
+refreshBtn.addEventListener('click', () => {
+  chat.innerHTML = '';
+  conversationHistory = [];
+  if (engine) {
+    engine.chat.completions.resetChat(); 
+  }
+  console.log("Chat history cleared.");
 });
 
 // boot

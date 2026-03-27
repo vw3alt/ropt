@@ -19,7 +19,7 @@
 <div id="setup-popup" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(14,14,14,0.95); display:flex; align-items:center; justify-content:center; z-index:1000;">
   <div style="background:var(--surface); border:1px solid var(--border); padding:30px; border-radius:8px; text-align:center; max-width:400px;">
     <h2 style="color:var(--accent); margin-bottom:15px; font-size:18px;">initial setup</h2>
-    <p style="margin-bottom:20px; font-size:14px; line-height:1.6;">ropt takes 3-25 seconds for initial setup. go outside and touch grass</p>
+    <p style="margin-bottom:20px; font-size:14px; line-height:1.6;">ropt takes 2-4 minutes for initial setup. go outside and touch grass</p>
     <button id="close-popup" style="background:var(--accent); border:none; padding:10px 25px; border-radius:4px; cursor:pointer; font-family:var(--font); font-weight:600;">OK</button>
   </div>
 </div>
@@ -27,8 +27,12 @@
 <div id="chat"></div>
 
 <div id="input-row">
-  <textarea id="user-input" placeholder="say something to ropt..." rows="1" disabled></textarea>
+  <button id="refresh-btn">⟳</button> <textarea id="user-input" placeholder="say something to ropt..." rows="1" disabled></textarea>
   <button id="send-btn" disabled>send</button>
+</div>
+
+<div id="footer-links" style="text-align: center; margin-top: -10px; padding-bottom: 15px;">
+  <a href="https://www.goarmy.com/info?iom=join+the+army" target="_blank" style="color: var(--muted); font-size: 12px; text-decoration: none;">report a problem with ropt</a>
 </div>
 
 <script type="module" src="app.js"></script>

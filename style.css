@@ -149,3 +149,25 @@
     transition: opacity 0.2s;
   }
   #send-btn:disabled { opacity: 0.3; cursor: default; }
+
+  #refresh-btn {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-family: var(--font);
+  font-size: 18px;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#refresh-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#footer-links a:hover {
+  color: var(--accent) !important;
+  opacity: 1 !important;
+}
